@@ -9,28 +9,42 @@
  * @author Admin
  */
 public class Student {
-    String id;
-    String name;
+    int id;
+    String studentName;
+    String studentClass;
 
-    public Student(String id, String name) {
-        this.id = id;
-        this.name = name;
+    public Student() {
     }
 
-    public String getId() {
+    public Student(int id, String studentName, String studentClass) {
+        this.id = id;
+        this.studentName = studentName;
+        this.studentClass = studentClass;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getStudentName() {
+        return studentName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
+
+    public String getStudentClass() {
+        return studentClass;
+    }
+
+    public void setStudentClass(String studentClass) {
+        this.studentClass = studentClass;
+    }
+
     
 }
